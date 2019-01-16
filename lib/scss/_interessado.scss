@@ -1,0 +1,101 @@
+$font_ficha: #2ee5e5;
+.interessado {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 50% 30%;
+  grid-template-rows: 150px 40px 50px 100px;
+  justify-content: space-around;
+  grid-area: interessado;
+  .ficha {
+    grid-area: ficha;
+    display: grid;
+    grid-column: 2;
+    justify-content: center;
+    grid-row: 1/-1;
+    text-align: center;
+    justify-items: center;
+    .titulo-ficha {
+      grid-row: 1;
+      grid-column: 1;
+      align-self: center;
+      font-family: Quicksand-Regular;
+      font-size: 3.33vw;
+      color: $font_ficha;
+      width: 15.63vw;
+    }
+    svg {
+      grid-row: 1;
+      grid-column: 1;
+
+      height: 100%;
+      width: 28vw;
+    }
+  }
+
+  h2 {
+    color: $font_big;
+    font-size: 4.38vw;
+    width: 29.84vw;
+    font-family: PlayfairDisplay-Bold;
+  }
+  h3 {
+    font-size: 1.88vw;
+    line-height: 28px;
+    color: $font_subheaders;
+    font-family: PlayfairDisplay-Regular;
+  }
+  p {
+    font-size: 0.94vw;
+    line-height: 3.78vh;
+    color: #fff;
+    width: 29.84vw;
+    font-family: Quicksand-Bold;
+  }
+  span {
+    display: grid;
+    grid-template-columns: 50% 20%;
+    align-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    line-height: 28px;
+    a {
+      color: $font_recibos;
+    }
+    font-family: PlayfairDisplay-Regular;
+    grid-column-gap: 10px;
+    justify-items: start;
+  }
+  .arrow {
+    width: 4.13vw;
+    display: inline-block;
+    height: 100%;
+
+    transform: rotate(-90deg);
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bolhas {
+    position: absolute;
+    z-index: -94;
+    width: 100%;
+    height: 100vh;
+
+    svg {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+  .arranhoes {
+    position: absolute;
+    z-index: -95;
+    width: 100%;
+    height: 100vh;
+
+    svg {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+}

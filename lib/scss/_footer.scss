@@ -1,0 +1,23 @@
+footer {
+  display: grid;
+  height: 20vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  width: 60vw;
+  justify-self: center;
+  a {
+    color: #efefef;
+  }
+
+  font-size: 1.67vw;
+
+  span {
+    font-family: Quicksand-Regular;
+  }
+  p {
+    grid-column: 1/-1;
+    color: #ffffff;
+    font-family: PlayfairDisplay-Bold;
+  }
+}

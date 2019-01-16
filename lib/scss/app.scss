@@ -1,0 +1,62 @@
+@import "../../node_modules/reset-css/sass/reset";
+@import "normalize";
+
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url(../fonts/Quicksand-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand-Light;
+  src: url(../fonts/Quicksand-Light.ttf);
+}
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+@font-face {
+  font-family: PlayfairDisplay-Regular;
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: PlayfairDisplay-Bold;
+  src: url(../fonts/PlayfairDisplay-Bold.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(to bottom, #041523, #0b1e37, #03101a);
+  a {
+    text-decoration: none;
+  }
+  .indicador {
+    height: 100%;
+    position: fixed;
+    width: 80px;
+    margin-left: 40px;
+    top: 45%;
+  }
+  .estrutura {
+    display: grid;
+    grid-template-areas:
+      "apresentacao"
+      "quem-somos"
+      "doacoes"
+      "interessado"
+      "contato"
+      "footer";
+    grid-row-gap: 100px;
+  }
+}
+
+@import "header";
+@import "apresentacao";
+@import "quem-somos";
+@import "doacoes";
+@import "interessado";
+@import "contato";
+@import "footer";

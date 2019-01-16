@@ -1,0 +1,74 @@
+$font_big: #e52e6c;
+$font_subheaders: #efefef;
+
+.quem-somos {
+  display: grid;
+  grid-area: quem-somos;
+  height: 100vh;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 100px 100px 540px;
+  grid-template-areas:
+    "titulo1 img"
+    "titulo2 img"
+    "texto img";
+  grid-column-gap: 25px;
+  justify-content: space-around;
+
+  h2 {
+    grid-area: titulo1;
+    color: $font_big;
+    font-size: 4.38vw;
+    width: 29.84vw;
+    font-family: PlayfairDisplay-Bold;
+  }
+  h3 {
+    grid-area: titulo2;
+    font-size: 1.88vw;
+    line-height: 48px;
+    width: 25vw;
+    color: $font_subheaders;
+    font-family: PlayfairDisplay-Regular;
+  }
+  p {
+    grid-area: texto;
+    font-size: 0.94vw;
+    line-height: 3.78vh;
+    color: #fff;
+    width: 29.84vw;
+    font-family: Quicksand-Bold;
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+    object-position: 45% 0;
+    width: 41vw;
+    height: 80vh;
+    grid-row: 2;
+  }
+  .bolhas {
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 100vh;
+
+    svg {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+  .arranhoes {
+    position: absolute;
+    z-index: -98;
+    width: 100%;
+    height: 100vh;
+
+    svg {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+}

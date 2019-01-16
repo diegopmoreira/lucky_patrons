@@ -1,0 +1,83 @@
+$font_big: #e52e6c;
+$font_subheaders: #efefef;
+$font_recibos: #2ee5e5;
+.doacoes {
+  display: grid;
+  box-shadow: 0px 0px 20px 0px #000, 0px 0px 20px 0px #000;
+
+  grid-area: doacoes;
+  height: 70vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 70px 70px 100px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  h2 {
+    color: $font_big;
+    font-size: 4.38vw;
+    width: 29.84vw;
+    font-family: PlayfairDisplay-Bold;
+  }
+  h3 {
+    font-size: 1.88vw;
+    line-height: 28px;
+    color: $font_subheaders;
+    font-family: PlayfairDisplay-Regular;
+  }
+  p {
+    font-size: 0.94vw;
+    line-height: 3.78vh;
+    color: #fff;
+    width: 29.84vw;
+    font-family: Quicksand-Bold;
+  }
+  span {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    line-height: 28px;
+    a {
+      color: $font_recibos;
+    }
+
+    font-family: PlayfairDisplay-Regular;
+    grid-column-gap: 10px;
+    justify-items: start;
+  }
+  .arrow {
+    width: 4.13vw;
+    display: inline-block;
+    height: 100%;
+
+    transform: rotate(-90deg);
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bolhas {
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 100vh;
+
+    svg {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+  .arranhoes {
+    position: absolute;
+    z-index: -98;
+    width: 100%;
+    height: 100vh;
+
+    svg {
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+}
