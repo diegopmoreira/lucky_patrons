@@ -4,7 +4,7 @@ $font_big: #e52e6c;
 $font_subheaders: #fff;
 $font_subheaders2: #efefefef;
 
-.cabecalho {
+#cabecalho {
   grid-area: cabecalho;
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
@@ -26,7 +26,7 @@ $font_subheaders2: #efefefef;
     grid-template-rows: 1fr;
     align-items: center;
     margin-left: 40px;
-    font-size: 1rem;
+    font-size: 1.67vw;
     justify-self: start;
     .ham_svg {
       min-height: 25px;
@@ -40,7 +40,7 @@ $font_subheaders2: #efefefef;
   #titulo {
     text-align: center;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.5vw;
     justify-self: center;
   }
   .login-signup ul {
@@ -49,7 +49,7 @@ $font_subheaders2: #efefefef;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin-right: 40px;
-    font-size: 1rem;
+    font-size: 1.67vw;
     .signup {
       a {
         color: $font_signup;

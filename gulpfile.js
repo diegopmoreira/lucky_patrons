@@ -70,7 +70,7 @@ function scripts() {
 
 // Watch files
 function watchFiles() {
-  gulp.watch("lib/scss/*.scss", css);
+  gulp.watch("lib/scss/**/*.scss", css);
   gulp.watch("lib/js/*.js", scripts);
   gulp.watch("lib/img/*", images);
 }

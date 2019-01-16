@@ -1,4 +1,4 @@
-@import "../../node_modules/reset-css/sass/reset";
+@import "reset";
 @import "normalize";
 
 @font-face {
@@ -40,7 +40,7 @@ body {
     margin-left: 40px;
     top: 45%;
   }
-  .estrutura {
+  #estrutura-home {
     display: grid;
     grid-template-areas:
       "apresentacao"
@@ -53,10 +53,16 @@ body {
   }
 }
 
-@import "header";
-@import "apresentacao";
-@import "quem-somos";
-@import "doacoes";
-@import "interessado";
-@import "contato";
-@import "footer";
+#estrutura-login {
+  display: grid;
+  grid-template-areas: "login";
+}
+
+@import "homepage/header";
+@import "homepage/apresentacao";
+@import "homepage/o-que-somos";
+@import "homepage/doacoes";
+@import "homepage/interessado";
+@import "homepage/contato";
+@import "homepage/footer";
+@import "login/login";

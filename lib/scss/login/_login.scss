@@ -1,0 +1,130 @@
+#login {
+  display: grid;
+  grid-area: login;
+  grid-template-rows: 100px 80px 320px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  height: 100vh;
+  align-content: center;
+  background: url("../img/main-bg.png") no-repeat center center fixed;
+  background-size: cover;
+
+  h2 {
+    font-family: PlayfairDisplay-Bold;
+    color: $font_big;
+    font-size: 6.67vw;
+    align-self: end;
+  }
+  h3 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 3.33vw;
+    color: $font_subheaders;
+    align-self: end;
+  }
+  span {
+    align-self: end;
+    font-family: PlayfairDisplay-Bold;
+    font-size: 1.67vw;
+    text-align: center;
+    color: $font_subheaders;
+  }
+
+  /* form starting stylings ------------------------------- */
+  form {
+    .group {
+      position: relative;
+      margin-top: 45px;
+      input {
+        font-size: 18px;
+        padding: 10px 0px 10px 0px;
+        display: block;
+        width: 31.25vw;
+        border: none;
+        border-bottom: 1px solid #757575;
+        background-color: transparent;
+        outline: none;
+        text-align: center;
+      }
+      #pass-login {
+        width: 26.04vw;
+        text-align: center;
+        margin: 0 auto;
+      }
+      label {
+        width: 100%;
+        display: block;
+        font-size: 1.67vw;
+        font-family: PlayfairDisplay-Regular;
+        position: absolute;
+        text-align: center;
+        pointer-events: none;
+        color: $font_subheaders2;
+
+        top: 10px;
+        transition: 0.2s ease all;
+      }
+
+      /* active state */
+      input:focus ~ label,
+      input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264ae;
+      }
+
+      /* BOTTOM BARS ================================= */
+      .bar {
+        position: relative;
+        display: block;
+        width: 31.25vw;
+
+        &:before,
+        &:after {
+          content: "";
+          height: 2px;
+          width: 0;
+          bottom: 1px;
+          position: absolute;
+          background: #5264ae;
+          transition: 0.2s ease all;
+        }
+        &:before {
+          left: 50%;
+        }
+        &:after {
+          right: 50%;
+        }
+      }
+      .bar-pass {
+        width: 26.04vw;
+        margin: 0 auto;
+      }
+      /* active state */
+      input:focus ~ .bar:before,
+      input:focus ~ .bar:after {
+        width: 50%;
+      }
+    }
+    p {
+      text-align: center;
+      display: block;
+      margin-top: 20px;
+      a {
+        color: $font_subheaders2;
+        font-family: Quicksand-Bold;
+        font-size: 0.94vw;
+      }
+    }
+    button {
+      border: none;
+      background: none;
+      font-size: 2.5vw;
+      font-family: PlayfairDisplay-Regular;
+      color: $font-signup;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+  }
+}
