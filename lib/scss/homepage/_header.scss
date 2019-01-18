@@ -26,7 +26,7 @@ $font_subheaders2: #efefefef;
     grid-template-rows: 1fr;
     align-items: center;
     margin-left: 40px;
-    font-size: 1.67vw;
+    font-size: 24px;
     justify-self: start;
     .ham_svg {
       min-height: 25px;
@@ -40,7 +40,7 @@ $font_subheaders2: #efefefef;
   #titulo {
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.5vw;
+    font-size: 32px;
     justify-self: center;
   }
   .login-signup ul {
@@ -49,7 +49,7 @@ $font_subheaders2: #efefefef;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin-right: 40px;
-    font-size: 1.67vw;
+    font-size: 24px;
     .signup {
       a {
         color: $font_signup;
@@ -87,7 +87,7 @@ $font_subheaders2: #efefefef;
       grid-template-columns: 1fr;
       grid-template-rows: 100px;
       span {
-        font-size: 2.5vw;
+        font-size: 32px;
         font-family: Quicksand-Regular;
         text-transform: uppercase;
       }
@@ -109,14 +109,14 @@ $font_subheaders2: #efefefef;
       li {
         margin-left: 6vw;
         a {
-          font-size: 3.33vw;
+          font-size: 48px;
           font-family: PlayfairDisplay-Bold;
           display: block;
           white-space: nowrap;
           color: $font_big;
         }
         span {
-          font-size: 1.67vw;
+          font-size: 24px;
           margin-top: 10px;
           text-transform: uppercase;
           display: block;
@@ -126,12 +126,12 @@ $font_subheaders2: #efefefef;
       }
       .termos {
         margin-left: 6vw;
-        font-size: 1.67vw;
+        font-size: 24px;
         color: $font_subheaders2;
       }
       .politicas {
         margin-left: 6vw;
-        font-size: 1.67vw;
+        font-size: 24px;
         color: $font_subheaders2;
       }
     }

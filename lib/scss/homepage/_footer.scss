@@ -1,16 +1,19 @@
 footer {
   display: grid;
-  height: 20vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   width: 60vw;
+  word-wrap: nowrap;
   justify-self: center;
+  grid-row-gap: 20px;
+  margin-bottom: 20px;
+
   a {
     color: #efefef;
   }
 
-  font-size: 1.67vw;
+  font-size: 24px;
 
   span {
     font-family: Quicksand-Regular;

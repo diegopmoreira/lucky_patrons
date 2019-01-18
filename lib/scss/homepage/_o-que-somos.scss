@@ -4,7 +4,6 @@ $font_subheaders: #efefef;
 #o-que-somos {
   display: grid;
   grid-area: quem-somos;
-  height: 100vh;
   grid-template-columns: 40% 40%;
   grid-template-rows: 100px 100px 540px;
   grid-template-areas:
@@ -12,28 +11,31 @@ $font_subheaders: #efefef;
     "titulo2 img"
     "texto img";
   grid-column-gap: 25px;
-  justify-content: space-around;
+
+  justify-content: center;
+  align-items: center;
 
   h2 {
     grid-area: titulo1;
     color: $font_big;
-    font-size: 4.38vw;
-    width: 29.84vw;
+    font-size: 64px;
+
     font-family: PlayfairDisplay-Bold;
   }
   h3 {
     grid-area: titulo2;
-    font-size: 1.88vw;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 32px;
     width: 25vw;
     color: $font_subheaders;
     font-family: PlayfairDisplay-Regular;
   }
   p {
     grid-area: texto;
-    font-size: 0.94vw;
+    font-size: 14px;
     line-height: 3.78vh;
     color: #fff;
+    align-self: start;
     width: 29.84vw;
     font-family: Quicksand-Bold;
   }
@@ -47,7 +49,7 @@ $font_subheaders: #efefef;
     object-position: 45% 0;
     width: 41vw;
     height: 80vh;
-    grid-row: 2;
+    grid-row: 1/-1;
   }
   .bolhas {
     position: absolute;

@@ -58,6 +58,11 @@ body {
   grid-template-areas: "login";
 }
 
+.bolhas,
+.arranhoes {
+  overflow: hidden;
+  max-height: 400px;
+}
 @import "homepage/header";
 @import "homepage/apresentacao";
 @import "homepage/o-que-somos";
