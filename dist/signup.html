@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login - Lucky Patrons - Plataforma de Sorteios</title>
+    <title>Sign up - Lucky Patrons - Plataforma de Sorteios</title>
     <link rel="icon" href="assets/img/chip-icon.ico" />
     <link rel="stylesheet" href="assets/css/app.css" />
   </head>
   <body>
-    <article id="estrutura-login">
+    <article id="estrutura-signup">
       <header id="cabecalho">
         <nav class="menu">
           <a class="ham_svg" href="#">
@@ -98,23 +98,50 @@
           </ul>
         </nav>
       </header>
-      <section id="login">
-        <h2>Login</h2>
-        <h3>Acesse sua conta</h3>
+      <section id="signup">
+        <h2>Sign up</h2>
+        <h3>Cadastre-se</h3>
 
         <form>
           <div class="group">
-            <input type="text" id="user-login" name="username" required />
-            <span class="bar"></span> <label>usuário ou email cadastrado</label>
+            <input type="text" id="user-signup" name="username" required />
+            <span class="bar"></span> <label>usuário</label>
           </div>
 
           <div class="group">
-            <input type="password" id="pass-login" name="password" required />
-            <span class="bar bar-pass"></span> <label>senha</label>
+            <input type="email" id="email-signup" name="email" required />
+            <span class="bar "></span> <label>email</label>
           </div>
-          <p><a href="#">esqueci minha senha ou usuário</a></p>
-          <button type="submit" name="login" value="Entrar">Entrar</button>
-          <p><a href="#">Não sou cadastrado</a></p>
+          <div class="group">
+            <input type="password" id="pass-signup" name="password" required />
+            <span class="bar "></span> <label>senha</label>
+          </div>
+          <div class="group">
+            <input
+              type="password"
+              id="confirm-pass-signup"
+              name="password"
+              required
+            />
+            <span class="bar"></span> <label>confirmar senha</label>
+          </div>
+          <p class="chk-signup">
+            <input
+              type="checkbox"
+              name="terms"
+              value="Li e concordo com os termos de uso"
+            /><label>Li e concordo com os termos de uso</label>
+            <input
+              type="checkbox"
+              name="adult"
+              value="Tenho 18 anos ou mais"
+            /><label>Tenho 18 anos ou mais</label>
+          </p>
+          <p class="terms-pol">
+            <a href="#">Termos de uso</a>
+            <a href="#">Políticas de privacidade</a>
+          </p>
+          <button type="submit" name="login" value="Entrar">Criar conta</button>
         </form>
       </section>
     </article>

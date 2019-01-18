@@ -57,7 +57,15 @@ body {
   display: grid;
   grid-template-areas: "login";
 }
-
+#estrutura-recibos {
+  display: grid;
+  grid-template-areas: "recibos";
+  justify-content: center;
+}
+#estrutura-signup {
+  display: grid;
+  grid-template-areas: "signup";
+}
 .bolhas,
 .arranhoes {
   overflow: hidden;
@@ -71,3 +79,5 @@ body {
 @import "homepage/contato";
 @import "homepage/footer";
 @import "login/login";
+@import "recibos/recibos";
+@import "signup/signup";

@@ -1,0 +1,152 @@
+#signup {
+  display: grid;
+  grid-area: signup;
+  justify-items: start;
+  height: 100vh;
+  align-content: center;
+  background: url("../img/main-bg.png") no-repeat center center fixed;
+  background-size: cover;
+
+  h2 {
+    font-family: PlayfairDisplay-Bold;
+    color: $font_big;
+    font-size: 96px;
+    align-self: end;
+    margin-left: 6vw;
+  }
+  h3 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 48px;
+    color: $font_subheaders;
+    align-self: end;
+    margin-left: 6vw;
+    margin-top: 20px;
+  }
+
+  /* form starting stylings ------------------------------- */
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    margin-left: 6vw;
+    .chk-signup {
+      grid-column: 2;
+      display: grid;
+      grid-row-gap: 20px;
+      margin-top: 40px;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 5% 1fr;
+      input {
+        background: none;
+      }
+      label {
+        color: $font_subheaders2;
+        font-family: Quicksand-Bold;
+        font-size: 14px;
+      }
+    }
+    .terms-pol {
+      font-family: Quicksand-Regular;
+      grid-column: 1;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-row: 3;
+      grid-row-gap: 20px;
+      margin-top: 40px;
+      a {
+        color: #efefef;
+        font-size: 24px;
+        text-decoration: none;
+      }
+    }
+    .group {
+      position: relative;
+      margin-top: 45px;
+      input {
+        font-size: 18px;
+        padding: 10px 0px 10px 0px;
+        display: block;
+        width: 31.25vw;
+        border: none;
+        border-bottom: 1px solid #757575;
+        background-color: transparent;
+        outline: none;
+        text-align: center;
+      }
+      #email-signup {
+        grid-column: 2;
+      }
+      #confirm-pass-signup {
+        grid-column: 2;
+      }
+      label {
+        width: 100%;
+        display: block;
+        font-size: 24px;
+        font-family: PlayfairDisplay-Regular;
+        position: absolute;
+        text-align: start;
+        pointer-events: none;
+        color: $font_subheaders2;
+        margin-bottom: 5px;
+
+        top: 5px;
+        transition: 0.2s ease all;
+      }
+
+      /* active state */
+      input:focus ~ label,
+      input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264ae;
+      }
+
+      /* BOTTOM BARS ================================= */
+      .bar {
+        position: relative;
+        display: block;
+        width: 31.25vw;
+
+        &:before,
+        &:after {
+          content: "";
+          height: 2px;
+          width: 0;
+          bottom: 1px;
+          position: absolute;
+          background: #5264ae;
+          transition: 0.2s ease all;
+        }
+        &:before {
+          left: 50%;
+        }
+        &:after {
+          right: 50%;
+        }
+      }
+      .bar-pass {
+        width: 26.04vw;
+        margin: 0 auto;
+      }
+      /* active state */
+      input:focus ~ .bar:before,
+      input:focus ~ .bar:after {
+        width: 50%;
+      }
+    }
+
+    button {
+      border: none;
+      background: none;
+      font-size: 48px;
+      font-family: PlayfairDisplay-Regular;
+      color: $font-signup;
+      justify-self: start;
+      display: block;
+      margin-top: 40px;
+      padding: 0;
+      grid-column: 1;
+    }
+  }
+}
