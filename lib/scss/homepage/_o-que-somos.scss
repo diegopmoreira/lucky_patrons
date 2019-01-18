@@ -31,6 +31,7 @@ $font_subheaders: #efefef;
     font-family: PlayfairDisplay-Regular;
     text-align: start;
     width: 29.84vw;
+    align-self: start;
     justify-self: center;
   }
   p {
@@ -57,6 +58,7 @@ $font_subheaders: #efefef;
     height: 100vh;
     grid-row: 1/4;
     justify-self: end;
+    box-shadow: -10px 10px 20px -5px rgba(0, 0, 0, 0.5);
   }
   .bolhas {
     position: absolute;

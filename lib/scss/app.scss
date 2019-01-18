@@ -25,11 +25,13 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   transition: all 0.2s ease-in-out;
-  background: linear-gradient(to bottom, #041523, #0b1e37, #03101a);
+  background: linear-gradient(180deg, #041523, #0b1e37, #03101a);
+
   a {
     text-decoration: none;
   }
@@ -50,6 +52,10 @@ body {
       "contato"
       "footer";
     grid-row-gap: 100px;
+
+    background: url(../img/main-bg.png) no-repeat 50% -100px,
+      url(../img/footer-bg.png) no-repeat center bottom,
+      linear-gradient(180deg, #041523, #0b1e37, #03101a);
   }
 }
 
@@ -61,6 +67,9 @@ body {
   display: grid;
   grid-template-areas: "recibos";
   justify-content: center;
+
+  background: url(../img/footer-bg.png) no-repeat center bottom,
+    linear-gradient(180deg, #041523, #0b1e37, #03101a);
 }
 #estrutura-signup {
   display: grid;

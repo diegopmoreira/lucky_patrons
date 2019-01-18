@@ -61,9 +61,10 @@ $font_ficha: #2ee5e5;
     line-height: 28px;
     a {
       color: $font_recibos;
+      white-space: nowrap;
     }
     font-family: PlayfairDisplay-Regular;
-    grid-column-gap: 10px;
+    grid-column-gap: 20px;
     justify-items: start;
   }
   .arrow {

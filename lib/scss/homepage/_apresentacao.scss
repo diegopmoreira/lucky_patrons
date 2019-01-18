@@ -6,8 +6,7 @@
   align-items: center;
   grid-area: apresentacao;
   align-content: center;
-  background: url("../img/main-bg.png") no-repeat center center;
-  background-size: cover;
+  height: 100vh;
 
   h2 {
     font-family: PlayfairDisplay-Bold;
@@ -29,13 +28,14 @@
     font-family: PlayfairDisplay-Bold;
     font-size: 24px;
     text-align: center;
+    width: 100%;
     color: $font_subheaders;
     .arrow {
       width: 3.13vw;
       height: 100%;
       margin: 0 auto;
       margin-top: 10px;
-      margin-bottom: 60px;
+
       svg {
         width: 100%;
         height: 100%;
