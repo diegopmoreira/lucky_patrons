@@ -4,6 +4,8 @@ $font_ficha: #2ee5e5;
   grid-template-columns: 40% 40%;
   grid-template-rows: 150px 40px 50px 100px;
   justify-content: center;
+  align-content: center;
+  height: 100vh;
   grid-area: interessado;
   .ficha {
     grid-area: ficha;

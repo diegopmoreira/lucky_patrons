@@ -1,0 +1,46 @@
+#welcome {
+  display: grid;
+  grid-template-rows: 3.5fr 1fr 1fr 1.5fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-area: welcome;
+  align-content: center;
+  height: 100vh;
+  background: url("../img/main-bg.png") no-repeat center center;
+  background-size: cover;
+
+  h2 {
+    font-family: PlayfairDisplay-Bold;
+    color: $font_big;
+    font-size: 96px;
+    align-self: end;
+  }
+  h3 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 48px;
+    color: $font_subheaders;
+  }
+  .ficha svg {
+    height: 100%;
+    width: 4.69vw;
+  }
+  span {
+    align-self: end;
+    font-family: PlayfairDisplay-Bold;
+    font-size: 24px;
+    text-align: center;
+    color: $font_subheaders;
+    .arrow {
+      width: 3.13vw;
+      height: 100%;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 60px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

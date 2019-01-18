@@ -66,6 +66,10 @@ body {
   display: grid;
   grid-template-areas: "signup";
 }
+#estrutura-welcome {
+  display: grid;
+  grid-template-areas: "welcome";
+}
 .bolhas,
 .arranhoes {
   overflow: hidden;
@@ -81,3 +85,4 @@ body {
 @import "login/login";
 @import "recibos/recibos";
 @import "signup/signup";
+@import "welcome/welcome";
