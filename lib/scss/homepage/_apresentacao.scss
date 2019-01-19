@@ -13,6 +13,8 @@
     color: $font_big;
     font-size: 96px;
     align-self: end;
+    justify-self: center;
+    text-align: center;
   }
   h3 {
     font-family: PlayfairDisplay-Regular;
@@ -40,6 +42,27 @@
         width: 100%;
         height: 100%;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 38.6875em) {
+  .indicador {
+    display: none;
+  }
+  #apresentacao {
+    h2 {
+      font-size: 3.75em;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    .ficha svg {
+      width: 20vw;
+    }
+
+    span .arrow {
+      width: 12vw;
     }
   }
 }

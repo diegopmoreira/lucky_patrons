@@ -14,6 +14,8 @@ $font_subheaders: #fff;
     font-family: PlayfairDisplay-Bold;
     color: $font_contato;
     font-size: 96px;
+    justify-self: center;
+    text-align: center;
   }
   h3 {
     font-family: PlayfairDisplay-Regular;
@@ -59,5 +61,23 @@ $font_subheaders: #fff;
     z-index: -91;
     width: 100%;
     object-fit: cover;
+  }
+}
+@media only screen and (max-width: 38.6875em) {
+  #contato {
+    h2 {
+      font-size: 3.75em;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    .arrow {
+      width: 12vw;
+    }
+    .social {
+      grid-template-columns: 12vw 12vw 12vw;
+      grid-column-gap: 12vw;
+    }
   }
 }

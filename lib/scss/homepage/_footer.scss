@@ -7,7 +7,8 @@ footer {
   height: 20vh;
   white-space: nowrap;
   justify-self: center;
-  grid-row-gap: 20px;
+
+  align-items: end;
   grid-column-gap: 20px;
   margin-bottom: 20px;
 
@@ -19,16 +20,25 @@ footer {
 
   span {
     font-family: Quicksand-Regular;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   p {
     grid-column: 1/-1;
     color: #ffffff;
     font-family: PlayfairDisplay-Bold;
   }
-  .terms {
-    justify-self: end;
-  }
-  .pol {
-    justify-self: start;
+}
+
+@media only screen and (max-width: 38.6875em) {
+  footer {
+    grid-template-columns: 1fr;
+    width: 90vw;
+    justify-items: start;
+    white-space: normal;
+    span {
+      grid-template-columns: 1fr;
+    }
   }
 }

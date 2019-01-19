@@ -24,7 +24,7 @@ $font_subheaders2: #efefefef;
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-template-rows: 1fr;
-    align-items: center;
+    align-items: start;
     margin-left: 40px;
     font-size: 24px;
     justify-self: start;
@@ -86,6 +86,9 @@ $font_subheaders2: #efefefef;
       position: relative;
       grid-template-columns: 1fr;
       grid-template-rows: 100px;
+      .menu {
+        align-items: center;
+      }
       span {
         font-size: 32px;
         font-family: Quicksand-Regular;
@@ -118,7 +121,7 @@ $font_subheaders2: #efefefef;
         span {
           font-size: 24px;
           margin-top: 10px;
-          text-transform: uppercase;
+
           display: block;
           color: $font_subheaders2;
           font-family: PlayfairDisplay-Regular;
@@ -128,12 +131,36 @@ $font_subheaders2: #efefefef;
         margin-left: 6vw;
         font-size: 24px;
         color: $font_subheaders2;
+        font-family: PlayfairDisplay-Regular;
       }
       .politicas {
         margin-left: 6vw;
         font-size: 24px;
         color: $font_subheaders2;
+        font-family: PlayfairDisplay-Regular;
       }
+    }
+  }
+}
+@media only screen and (max-width: 38.6875em) {
+  #cabecalho {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    grid-column-gap: 10px;
+    height: 15vh;
+    .menu {
+      grid-row: 1;
+      span {
+        display: none;
+      }
+    }
+    .login-signup {
+      grid-row: 1;
+      justify-items: center;
+    }
+    h1 {
+      display: none;
     }
   }
 }

@@ -51,7 +51,7 @@ body {
       "interessado"
       "contato"
       "footer";
-    grid-row-gap: 100px;
+    grid-row-gap: 150px;
 
     background: url(../img/main-bg.png) no-repeat 50% -100px,
       url(../img/footer-bg.png) no-repeat center bottom,
@@ -79,11 +79,7 @@ body {
   display: grid;
   grid-template-areas: "welcome";
 }
-.bolhas,
-.arranhoes {
-  overflow: hidden;
-  max-height: 400px;
-}
+
 @import "homepage/header";
 @import "homepage/apresentacao";
 @import "homepage/o-que-somos";
