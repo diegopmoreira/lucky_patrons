@@ -1,0 +1,50 @@
+#platform {
+  display: grid;
+  grid-area: platform;
+  justify-items: start;
+  height: 100vh;
+  align-content: center;
+  background: url("../img/main-bg.png") no-repeat center center fixed;
+  background-size: cover;
+  grid-row-gap: 10px;
+
+  h2 {
+    font-family: PlayfairDisplay-Bold;
+    color: $font_big;
+    font-size: 96px;
+    align-self: end;
+    margin-left: 6vw;
+  }
+  h3 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 48px;
+    color: $font_subheaders;
+    align-self: end;
+    margin-left: 6vw;
+    margin-top: 20px;
+  }
+
+  .available {
+    display: grid;
+    margin-left: 6vw;
+    align-content: center;
+    align-items: center;
+    font-size: 32px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: $font_recibos;
+    font-family: PlayfairDisplay-Regular;
+    justify-items: start;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 38.6875em) {
+  #platform {
+    h2 {
+      font-size: 3.75rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -145,12 +145,14 @@ $font_subheaders2: #efefefef;
 @media only screen and (max-width: 38.6875em) {
   #cabecalho {
     grid-template-columns: auto;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     justify-content: center;
     grid-column-gap: 10px;
-    height: 15vh;
+    height: 20vh;
+    grid-template-areas: "menu login-signup" "titulo titulo";
     .menu {
       grid-row: 1;
+      grid-area: menu;
       span {
         display: none;
       }
@@ -158,9 +160,40 @@ $font_subheaders2: #efefefef;
     .login-signup {
       grid-row: 1;
       justify-items: center;
+      grid-area: login-signup;
     }
-    h1 {
-      display: none;
+    #titulo {
+      grid-column: 1/-1;
+      justify-self: center;
+      font-size: 1.25rem;
+      grid-area: titulo;
+      align-self: start;
+    }
+    .menu_modal {
+      .menu {
+        grid-area: unset;
+        .ham_svg {
+          svg {
+            width: 12vw;
+          }
+        }
+      }
+
+      ul {
+        margin-top: 0px;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        width: 90vw;
+        li {
+          a {
+            font-size: 2.75rem;
+            white-space: normal;
+          }
+          span {
+            font-size: 1.25rem;
+          }
+        }
+      }
     }
   }
 }

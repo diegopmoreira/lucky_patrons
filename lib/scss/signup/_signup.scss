@@ -151,3 +151,34 @@
     }
   }
 }
+@media only screen and (max-width: 38.6875em) {
+  #signup {
+    grid-template-rows: 25vh 1fr 1fr 1fr;
+
+    h2 {
+      font-size: 3.75rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    form {
+      grid-template-columns: 1fr;
+      .group {
+        margin-top: 20px;
+      }
+      .terms-pol {
+        grid-row: 7;
+        a {
+          font-size: 0.75rem;
+        }
+      }
+      .chk-signup {
+        grid-column: 1;
+        label {
+          font-size: 0.75rem;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

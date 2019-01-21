@@ -128,3 +128,23 @@
     }
   }
 }
+
+@media only screen and (max-width: 38.6875em) {
+  #login {
+    h2 {
+      font-size: 3.75rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    #user-login {
+      margin: 0 auto;
+    }
+    .bar {
+      margin: 0 auto;
+    }
+    form .group label {
+      font-size: 0.75rem;
+    }
+  }
+}

@@ -79,6 +79,10 @@ body {
   display: grid;
   grid-template-areas: "welcome";
 }
+#estrutura-platform {
+  display: grid;
+  grid-template-areas: "platform";
+}
 
 @import "homepage/header";
 @import "homepage/apresentacao";
@@ -91,3 +95,4 @@ body {
 @import "recibos/recibos";
 @import "signup/signup";
 @import "welcome/welcome";
+@import "platform/platform";
