@@ -83,6 +83,10 @@ body {
   display: grid;
   grid-template-areas: "platform";
 }
+#estrutura-dashboard {
+  display: grid;
+  grid-template-areas: "dashboard";
+}
 
 @import "homepage/header";
 @import "homepage/apresentacao";
@@ -96,3 +100,4 @@ body {
 @import "signup/signup";
 @import "welcome/welcome";
 @import "platform/platform";
+@import "dashboard/dashboard";

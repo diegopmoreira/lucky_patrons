@@ -1,0 +1,107 @@
+#dashboard {
+  display: grid;
+  grid-template-rows: 120px 40px 180px 40px 40px 40px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-area: dashboard;
+  align-content: center;
+  height: 100vh;
+  background: url("../img/main-bg.png") no-repeat center center fixed;
+  background-size: cover;
+
+  h2 {
+    font-family: PlayfairDisplay-Bold;
+    color: $font_big;
+    font-size: 64px;
+    align-self: end;
+    justify-self: center;
+    text-align: center;
+  }
+  h3 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 32px;
+    color: $font_subheaders;
+  }
+  .ficha {
+    display: grid;
+    text-align: center;
+    align-items: end;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    .qt-ficha {
+      font-family: Quicksand-Regular;
+      font-size: 36px;
+      grid-row: 1;
+      grid-column: 2;
+      color: $font_ficha;
+      align-self: center;
+    }
+    svg {
+      height: 100%;
+      width: 100%;
+      grid-row: 1;
+      grid-column: 2;
+    }
+    .comprar,
+    .perfil {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      color: $font_ficha;
+      align-items: end;
+    }
+    .comprar {
+      justify-self: end;
+    }
+    .perfil {
+      justify-self: start;
+    }
+  }
+
+  .actual {
+    align-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: $font_recibos;
+    font-family: PlayfairDisplay-Regular;
+    justify-items: start;
+  }
+  p {
+    font-size: 14px;
+    line-height: 3.78vh;
+    color: #fff;
+    font-family: Quicksand-Bold;
+    justify-self: center;
+  }
+  .participe {
+    font-size: 32px;
+    font-family: PlayfairDisplay-Regular;
+    color: $font-signup;
+    justify-self: center;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 38.6875em) {
+  .indicador {
+    display: none;
+  }
+  #apresentacao {
+    h2 {
+      font-size: 3.75rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    .ficha svg {
+      width: 20vw;
+    }
+
+    span .arrow {
+      width: 12vw;
+    }
+  }
+}
