@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="google-signin-client_id" content="1088322862117-1mg18o4330ojlu174f0uordgd3mlt12m.apps.googleusercontent.com.apps.googleusercontent.com">
+
     <title>Login - Lucky Patrons - Plataforma de Sorteios</title>
     <link rel="icon" href="assets/img/chip-icon.ico" />
     <link rel="stylesheet" href="assets/css/app.css" />
@@ -127,7 +129,10 @@
             <input type="password" id="pass-login" name="password" required />
             <span class="bar bar-pass"></span> <label>senha</label>
           </div>
+
           <p><a href="#">esqueci minha senha ou usuário</a></p>
+          <div class="g-signin2" data-onsuccess="onSignIn">Fazer login com Google</div>
+
           <button type="submit" name="login" value="Entrar">Entrar</button>
           <p><a href="#">Não sou cadastrado</a></p>
         </form>
@@ -139,6 +144,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"
   ></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 
   <script src="assets/js/app-min.js"></script>
 </html>
