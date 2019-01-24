@@ -87,6 +87,10 @@ body {
   display: grid;
   grid-template-areas: "dashboard";
 }
+#estrutura-perfil {
+  display: grid;
+  grid-template-areas: "perfil";
+}
 
 @import "homepage/header";
 @import "homepage/apresentacao";
@@ -101,3 +105,4 @@ body {
 @import "welcome/welcome";
 @import "platform/platform";
 @import "dashboard/dashboard";
+@import "perfil/perfil";

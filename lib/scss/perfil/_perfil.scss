@@ -1,0 +1,158 @@
+#perfil {
+  display: grid;
+
+  grid-row-gap: 25px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-area: perfil;
+  align-content: center;
+  height: 100vh;
+  background: url("../img/main-bg.png") no-repeat center center fixed;
+  background-size: cover;
+
+  h2 {
+    font-family: PlayfairDisplay-Bold;
+    color: $font_big;
+    font-size: 64px;
+    align-self: end;
+    justify-self: center;
+    text-align: center;
+  }
+  h3 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 32px;
+    color: $font_subheaders;
+  }
+  .mudancas {
+    display: grid;
+    text-align: center;
+    align-items: end;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90vw;
+    form {
+      .group {
+        position: relative;
+        margin-bottom: 45px;
+        input {
+          font-size: 18px;
+          padding: 10px 0px 10px 0px;
+          display: block;
+          width: 31.25vw;
+          border: none;
+          border-bottom: 1px solid #757575;
+          background-color: transparent;
+          outline: none;
+          text-align: center;
+        }
+        #pass-login {
+          width: 26.04vw;
+          text-align: center;
+          margin: 0 auto;
+        }
+        label {
+          width: 100%;
+          display: block;
+          font-size: 24px;
+          font-family: PlayfairDisplay-Regular;
+          position: absolute;
+          text-align: center;
+          pointer-events: none;
+          color: $font_subheaders2;
+          letter-spacing: 0.15rem;
+          top: 10px;
+          transition: 0.2s ease all;
+        }
+
+        /* active state */
+        input:focus ~ label,
+        input:valid ~ label {
+          top: -20px;
+          font-size: 14px;
+          color: $font_big;
+        }
+
+        /* BOTTOM BARS ================================= */
+        .bar {
+          position: relative;
+          display: block;
+          width: 31.25vw;
+
+          &:before,
+          &:after {
+            content: "";
+            height: 2px;
+            width: 0;
+            bottom: 1px;
+            position: absolute;
+            background: #fff;
+            transition: 0.2s ease all;
+          }
+          &:before {
+            left: 50%;
+          }
+          &:after {
+            right: 50%;
+          }
+        }
+        .bar-pass {
+          width: 26.04vw;
+          margin: 0 auto;
+        }
+        /* active state */
+        input:focus ~ .bar:before,
+        input:focus ~ .bar:after {
+          width: 50%;
+        }
+      }
+
+      button {
+        border: none;
+        background: none;
+        font-size: 32px;
+        font-family: PlayfairDisplay-Regular;
+        color: $font-signup;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+    }
+    .dashboard,
+    .comprar {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      color: $font_ficha;
+      align-self: center;
+      grid-row: 1/-1;
+      align-items: end;
+    }
+    .dashboard {
+      justify-self: end;
+      grid-column: 3;
+    }
+    .comprar {
+      justify-self: start;
+      grid-column: 1;
+    }
+  }
+
+  .actual {
+    align-content: center;
+    align-items: center;
+    font-size: 24px;
+    line-height: 28px;
+    white-space: nowrap;
+    color: $font_recibos;
+    font-family: PlayfairDisplay-Regular;
+    justify-items: start;
+  }
+  p {
+    font-size: 14px;
+    line-height: 3.78vh;
+    color: #fff;
+    font-family: Quicksand-Bold;
+    justify-self: center;
+  }
+}

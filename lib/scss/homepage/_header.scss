@@ -50,6 +50,7 @@ $font_subheaders2: #efefefef;
     grid-template-rows: 1fr;
     margin-right: 40px;
     font-size: 24px;
+    white-space: nowrap;
     .signup {
       a {
         color: $font_signup;
@@ -107,7 +108,7 @@ $font_subheaders2: #efefefef;
       margin-top: 40px;
       grid-template-rows: 1fr 2fr 2fr 1fr;
       grid-template-columns: 500px;
-      grid-row-gap: 30px;
+      grid-row-gap: 20px;
       align-items: center;
       li {
         margin-left: 6vw;
